@@ -1,17 +1,10 @@
 /* Default css file for jemdoc. */
 
-table#tlayout {
-    border: none;
-    border-collapse: separate;
-    background: white;
-}
+table#tlayout { border: none; border-collapse: separate; background: white; }
 
-body {
-	background: white;
-	font-family: Georgia, serif;
-	padding-bottom: 8px;
-	margin: 0;
-}
+body { background: white; font-family: Georgia, serif; padding-bottom: 8px; margin: 0; }
+
+#wrap { width: 850px; margin: 0 auto 50px; } /* width of the fixed size content */
 
 #layout-menu {
 	background: #f6f6f6;
@@ -26,48 +19,23 @@ body {
     vertical-align: top;
 }
 
-#layout-menu td {
-	background: #f4f4f4;
-    vertical-align: top;
+#layout-menu td { background: #f4f4f4; vertical-align: top; }
+
+#layout-content { padding-top: 0.0em; padding-left: 1.0em; padding-right: 1.0em; border: none; background: white; text-align: left; vertical-align: top; }
+
+#layout-menu a { line-height: 1.5em; margin-left: 0.5em;
 }
 
-#layout-content {
-	padding-top: 0.0em;
-	padding-left: 1.0em;
-	padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-}
+tt { background: #ffffdd; }
 
-#layout-menu a {
-	line-height: 1.5em;
-	margin-left: 0.5em;
-}
+pre, tt { font-size: 90%; font-family: monaco, monospace; }
 
-tt {
-    background: #ffffdd;
-}
+a, a > tt { color: #224b8d; text-decoration: none; }
 
-pre, tt {
-	font-size: 90%;
-	font-family: monaco, monospace;
-}
+a:hover { border-bottom: 1px gray dotted; }
 
-a, a > tt {
-	color: #224b8d;
-	text-decoration: none;
-}
+#layout-menu a.current:link, #layout-menu a.current:visited { color: #022b6d; border-bottom: 1px gray solid; }
 
-a:hover {
-	border-bottom: 1px gray dotted;
-}
-
-#layout-menu a.current:link, #layout-menu a.current:visited {
-	color: #022b6d;
-	border-bottom: 1px gray solid;
-}
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
 	color: #527bbd;
 	text-decoration: none;
@@ -309,9 +277,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 	margin-bottom: 0.5em;
 }
 
-#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
-	margin-top: -0.7em;
-}
+#layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child { margin-top: -0.7em; }
 
 div#toptitle h1, #layout-content div#toptitle h1 {
 	margin-bottom: 0.0em;
@@ -321,47 +287,20 @@ div#toptitle h1, #layout-content div#toptitle h1 {
 	border-bottom: none;
 }
 
-img.eq {
-	padding: 0;
-	padding-left: 0.1em;
-	padding-right: 0.1em;
-	margin: 0;
-}
+img.eq { padding: 0; padding-left: 0.1em; padding-right: 0.1em; margin: 0; }
 
-img.eqwl {
-	padding-left: 2em;
-	padding-top: 0.6em;
-	padding-bottom: 0.2em;
-	margin: 0;
-}
+img.eqwl { padding-left: 2em; padding-top: 0.6em; padding-bottom: 0.2em; margin: 0; }
 
-table {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
+table { border: 2px solid black; border-collapse: collapse; }
 
-td {
-    padding: 2px;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
-}
+td { padding: 2px; padding-left: 0.5em; padding-right: 0.5em; text-align: center; border: 1px solid gray; }
 
-table + table {
-    margin-top: 1em;
-}
+table + table { margin-top: 1em; }
 
-tr.heading {
-    font-weight: bold;
-    border-bottom: 2px solid black;
-}
+tr.heading { font-weight: bold; border-bottom: 2px solid black; }
 
-img {
-    border: none;
-}
+img { border: none; }
 
-table.imgtable, table.imgtable td {
-    border: none;
-    text-align: left;
-}
+table.imgtable, table.imgtable td { border: none; text-align: left; }
+
+#section_flush_right{float: right; width: 230px; margin: 0 0 0 0;}
